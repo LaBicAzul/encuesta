@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academiainfo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500;1,700&family=Raleway:ital,wght@0,200;1,300;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">Academia Info</h1>
+        <p id="description">Bienvenido a Academia Info, por favor ingresa tus datos.</p>
+    </header>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" class="label1">Nombre <input class="input1" type="text" id="name" required placeholder="Ingresa tu nombre"></label>
+            <label id="email-label" class="label1">email <input class="input1" type="email" id="email" required placeholder="Ingresa tu email" value=""></label>
+            <label id="number-label" class="label1">Número de contacto <input class="input1" type="number" id="number" min="10" max="16" placeholder="Ingresa tu número" value="number"></label>
+            <div class="padre">
+                <p id="p-select">
+                    Qué te gustaría aprender? <select name="" id="dropdown">
+                        <option value="">Desarrollo web</option>
+                        <option value="">Desarrollo de aplicaciones móviles</option>
+                    </select>
+                </p>   
+             </div>
+            <div class="opciones">
+                <p>Estudiarías de manera :</p>
+                <label class="btn"> 
+                    <input type="radio" name="btn1" id="" value="1"> Presencial
+                </label>
+                <label class="btn">
+                    <input type="radio" name="btn1" id="" value="2">Online
+                </label>
+             </div>
+
+             <div class="casillas">
+                <p>Soy : </p>
+                <label class="btn"> Estudiante
+                    <input type="checkbox" name="" id="" value="check1">
+                </label>
+                <label class="btn"> Empleado
+                    <input type="checkbox" name="" id="" value="check2">
+                </label>
+             </div>
+
+             <div class="bio">
+                <label><p> Cuentanos un poco de ti : </p>
+                    <textarea name="bio" rows="3" cols="30" placeholder="Quiero aprender programación..."></textarea>
+                </label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
